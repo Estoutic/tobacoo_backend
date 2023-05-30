@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  tabaco-back:
+    image: tabaco_back:latest
+    container_name: tabaco_back
+    restart: unless-stopped
+    ports:
+      - 3200:8080
+
+networks:
+  main-net:
+    external: true
