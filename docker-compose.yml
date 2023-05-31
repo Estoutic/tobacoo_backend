@@ -9,6 +9,6 @@ services:
       - 3200:8080
 
 networks:
-  default:
-    external: true
-    name: master-net
+    default:
+      external: true
+      name: master-net
