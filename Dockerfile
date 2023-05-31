@@ -5,7 +5,7 @@ WORKDIR /app
 COPY pom.xml ./
 COPY src ./src/
 
-RUN mvn package
+RUN mvn clean package
 
 # Run stage
 FROM openjdk:17-ea-17-jdk-slim-buster as deploy
