@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  tabaco-back:
+  tabaco_back:
     image: tobaco_back:latest
     container_name: tobaco_back
     restart: unless-stopped
@@ -9,5 +9,6 @@ services:
       - 3200:8080
 
 networks:
-  master-net:
+  default:
     external: true
+    name: master-net
