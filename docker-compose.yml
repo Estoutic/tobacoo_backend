@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  tabaco_back:
+  tobaco_back:
     image: tobaco_back:latest
     container_name: tobaco_back
     restart: unless-stopped
