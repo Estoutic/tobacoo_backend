@@ -2,12 +2,12 @@ version: "3.9"
 
 services:
   tabaco-back:
-    image: tabaco_back:latest
-    container_name: tabaco_back
+    image: tobaco_back:latest
+    container_name: tobaco_back
     restart: unless-stopped
     ports:
       - 3200:8080
 
 networks:
-  main-net:
+  master-net:
     external: true
