@@ -10,8 +10,8 @@ RUN mvn package
 # Run stage
 FROM openjdk:17-ea-17-jdk-slim-buster as deploy
 
-WORKDIR /app
+WORKDIR /tobacoo_backend
 
-COPY --from=build /tobacoo_backend/target/*.jar ./tobacoo_backend.jar
+COPY --from=build /app/target/*.jar ./tobacoo_backend.jar
 
 CMD ["java","-jar","tobacoo_backend.jar"]
